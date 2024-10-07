@@ -134,8 +134,8 @@
         "module": "xregion_ssm_parameter"
       },
       "dotnet": {
-        "namespace": "Amazon.XRegion.SsmParameter",
-        "packageId": "Amazon.XRegion.SsmParameter"
+        "namespace": "com.github.cmorgia",
+        "packageId": "XRegionSsmParameterReader"
       }
     },
     "tsc": {

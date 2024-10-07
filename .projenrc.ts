@@ -9,8 +9,8 @@ const project = new awscdk.AwsCdkConstructLibrary({
   projenrcTs: true,
   repositoryUrl: 'https://github.com/cmorgia/xregion-ssm-parameter.git',
   publishToNuget: {
-    dotNetNamespace: 'Amazon.XRegion.SsmParameter',
-    packageId: 'Amazon.XRegion.SsmParameter',
+    dotNetNamespace: 'com.github.cmorgia',
+    packageId: 'XRegionSsmParameterReader',
   },
   publishToMaven: {
     mavenGroupId: 'com.amazonaws.xregion',
