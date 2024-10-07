@@ -8,6 +8,19 @@ const project = new awscdk.AwsCdkConstructLibrary({
   name: 'xregion-ssm-parameter',
   projenrcTs: true,
   repositoryUrl: 'https://github.com/cmorgia/xregion-ssm-parameter.git',
+  publishToNuget: {
+    dotNetNamespace: 'Amazon.XRegion.SsmParameter',
+    packageId: 'Amazon.XRegion.SsmParameter',
+  },
+  publishToMaven: {
+    mavenGroupId: 'com.amazonaws.xregion',
+    mavenArtifactId: 'xregion-ssm-parameter',
+    javaPackage: 'com.amazonaws.xregion.ssmparameter',
+  },
+  publishToPypi: {
+    distName: 'xregion-ssm-parameter',
+    module: 'xregion_ssm_parameter',
+  },
 
   // deps: [],                /* Runtime dependencies of this module. */
   // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */

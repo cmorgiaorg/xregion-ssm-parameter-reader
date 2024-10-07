@@ -16,7 +16,10 @@
     "eslint": "npx projen eslint",
     "package": "npx projen package",
     "package-all": "npx projen package-all",
+    "package:dotnet": "npx projen package:dotnet",
+    "package:java": "npx projen package:java",
     "package:js": "npx projen package:js",
+    "package:python": "npx projen package:python",
     "post-compile": "npx projen post-compile",
     "post-upgrade": "npx projen post-upgrade",
     "pre-compile": "npx projen pre-compile",
@@ -118,7 +121,23 @@
   "stability": "stable",
   "jsii": {
     "outdir": "dist",
-    "targets": {},
+    "targets": {
+      "java": {
+        "package": "com.amazonaws.xregion.ssmparameter",
+        "maven": {
+          "groupId": "com.amazonaws.xregion",
+          "artifactId": "xregion-ssm-parameter"
+        }
+      },
+      "python": {
+        "distName": "xregion-ssm-parameter",
+        "module": "xregion_ssm_parameter"
+      },
+      "dotnet": {
+        "namespace": "Amazon.XRegion.SsmParameter",
+        "packageId": "Amazon.XRegion.SsmParameter"
+      }
+    },
     "tsc": {
       "outDir": "lib",
       "rootDir": "src"
