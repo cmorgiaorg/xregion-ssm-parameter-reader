@@ -12,11 +12,11 @@ const project = new awscdk.AwsCdkConstructLibrary({
     dotNetNamespace: 'com.github.cmorgia',
     packageId: 'XRegionSsmParameterReader',
   },
-  publishToMaven: {
-    mavenGroupId: 'com.amazonaws.xregion',
-    mavenArtifactId: 'xregion-ssm-parameter',
-    javaPackage: 'com.amazonaws.xregion.ssmparameter',
-  },
+  // publishToMaven: {
+  //   mavenGroupId: 'com.amazonaws.xregion',
+  //   mavenArtifactId: 'xregion-ssm-parameter',
+  //   javaPackage: 'com.amazonaws.xregion.ssmparameter',
+  // },
   publishToPypi: {
     distName: 'xregion-ssm-parameter',
     module: 'xregion_ssm_parameter',
