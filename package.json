@@ -2,7 +2,7 @@
   "name": "xregion-ssm-parameter",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cmorgia/xregion-ssm-parameter.git"
+    "url": "https://github.com/cmorgiaorg/xregion-ssm-parameter.git"
   },
   "scripts": {
     "build": "npx projen build",
