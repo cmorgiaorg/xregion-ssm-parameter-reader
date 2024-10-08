@@ -1,16 +1,19 @@
 import { awscdk } from 'projen';
+
+const projectName = 'xregion-ssm-parameter-reader';
+
 const project = new awscdk.AwsCdkConstructLibrary({
   author: 'Claudio Morgia',
   authorAddress: 'cmorgia@gmail.com',
   cdkVersion: '2.1.0',
   defaultReleaseBranch: 'main',
   jsiiVersion: '~5.5.0',
-  name: 'xregion-ssm-parameter',
+  name: projectName,
   projenrcTs: true,
-  repositoryUrl: 'https://github.com/cmorgiaorg/xregion-ssm-parameter.git',
+  repositoryUrl: `https://github.com/cmorgiaorg/${projectName}.git`,
   publishToNuget: {
     dotNetNamespace: 'com.github.cmorgia',
-    packageId: 'XRegionSsmParameterReader',
+    packageId: projectName,
   },
   // publishToMaven: {
   //   mavenGroupId: 'com.amazonaws.xregion',
@@ -18,8 +21,8 @@ const project = new awscdk.AwsCdkConstructLibrary({
   //   javaPackage: 'com.amazonaws.xregion.ssmparameter',
   // },
   publishToPypi: {
-    distName: 'xregion-ssm-parameter',
-    module: 'xregion_ssm_parameter',
+    distName: projectName,
+    module: projectName,
   },
 
   // deps: [],                /* Runtime dependencies of this module. */

@@ -1,8 +1,8 @@
 {
-  "name": "xregion-ssm-parameter",
+  "name": "xregion-ssm-parameter-reader",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cmorgiaorg/xregion-ssm-parameter.git"
+    "url": "https://github.com/cmorgiaorg/xregion-ssm-parameter-reader.git"
   },
   "scripts": {
     "build": "npx projen build",
@@ -122,12 +122,12 @@
     "outdir": "dist",
     "targets": {
       "python": {
-        "distName": "xregion-ssm-parameter",
-        "module": "xregion_ssm_parameter"
+        "distName": "xregion-ssm-parameter-reader",
+        "module": "xregion-ssm-parameter-reader"
       },
       "dotnet": {
         "namespace": "com.github.cmorgia",
-        "packageId": "XRegionSsmParameterReader"
+        "packageId": "xregion-ssm-parameter-reader"
       }
     },
     "tsc": {
