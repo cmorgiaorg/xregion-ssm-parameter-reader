@@ -63,7 +63,13 @@
     "constructs": "^10.0.5"
   },
   "keywords": [
-    "cdk"
+    "aws",
+    "cdk",
+    "parameter",
+    "reader",
+    "ssm",
+    "typescript",
+    "xregion"
   ],
   "main": "lib/index.js",
   "license": "Apache-2.0",

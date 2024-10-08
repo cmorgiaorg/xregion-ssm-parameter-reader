@@ -1,6 +1,8 @@
 import { awscdk } from 'projen';
 
 const projectName = 'xregion-ssm-parameter-reader';
+const keywords = projectName.split('-');
+keywords.push('cdk', 'typescript', 'aws');
 
 const project = new awscdk.AwsCdkConstructLibrary({
   author: 'Claudio Morgia',
@@ -9,6 +11,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   defaultReleaseBranch: 'main',
   jsiiVersion: '~5.5.0',
   name: projectName,
+  keywords: keywords,
   projenrcTs: true,
   repositoryUrl: `https://github.com/cmorgiaorg/${projectName}.git`,
   publishToNuget: {
